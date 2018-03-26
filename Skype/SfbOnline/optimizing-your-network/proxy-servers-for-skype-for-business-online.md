@@ -27,7 +27,9 @@ This article will help you with guidance about using a proxy server with Skype f
   
 ## Not using a proxy server is recommended
 
-When it comes to Skype for Business traffic over proxies, Microsoft recommends bypassing proxies. Proxies don't make Skype for Business more secure because its traffic is already encrypted.
+Microsoft recommends using the Internet and a simple network design for optimal connectivity and performance in Office 365. A key goal in the network design should be reducing the round-trip time (RTT) from your network into the Microsoft global network and ensure that the network traffic is not hair pinned or centralized to specific locations. Microsoft also does not support or recommend the use of proxy devices or any other infrastructure that may filter, decrypt, inspect or take protocol or content specific action on Office 365 traffic. Use the Office 365 connectivity principles to manage your traffic and get the best performance when connecting to Office 365. See https://aka.ms/Office365Networking
+
+As such, When it comes to Skype for Business traffic over proxies, Microsoft recommends bypassing proxies. Proxies don't make Skype for Business more secure because its traffic is already encrypted.
   
 And having a proxy can cause issues. Performance-related problems can be introduced to the environment through latency and packet loss. Issues such as these will result in a negative experience in such Skype for Business scenarios as audio and video, where real-time streams are essential.
   
@@ -51,24 +53,6 @@ Microsoft also strongly recommends:
     
 Following this guidance should minimize potential problems.
   
-## Proxy vendors with built-in Skype for Business support or configuration options
-
-This section will contain information about proxy vendors who provide products or services that are proven to work successfully with Skype for Business traffic.
-  
-For organizations using **Bluecoat Proxy solutions**, a new firmware has been released which addresses several issues with:
-    
-  - SSL interception
-    
-  - OCSP/SRL checks
-    
-  - SIP over TLS
-    
-  - support for TURN
-    
-Bluecoat's native support for Skype for Business can easily be enabled, allowing for the identification of relevant traffic, and managing it appropriately. This ensures optimal authentication, signaling, and media traffic flow, to provide a great user experience without security concerns.
-    
-Please refer to the following link if Bluecoat Proxy is a part of your network topology: https://support.symantec.com/en_US/article.DOC9757.html
-
 ## Related topics
 
 [Optimizing your network for Skype for Business Online](https://support.office.com/en-us/article/Optimizing-your-network-for-Skype-for-Business-Online-b363bdca-b00d-4150-96c3-ec7eab5a8a43)
